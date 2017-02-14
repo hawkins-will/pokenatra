@@ -1,9 +1,13 @@
-<h2>Pok&eacute;dex</h2>
+<div class="left_div"></div>
+<div class="center_div">
+  <h2>Pok&eacute;dex</h2>
 
-<% @pokemon.each do |pokemon| %>
-  <div class="poke_list">
-    <a href="/pokemon/<%= pokemon.id%>">
-      <%= pokemon.name %>
-    </a>
-  </div>
-<% end %>
+  <% @pokemon.each do |pokemon| %>
+    <div class="poke_list">
+      <a href="/pokemon/<%= pokemon.id%>">
+        <%= pokemon.name %>
+      </a>
+    </div>
+  <% end %>
+</div>
+<div class="right_div"></div>

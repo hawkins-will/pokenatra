@@ -29,12 +29,12 @@ a {
 }
 
 img {
-  margin-left: 643px;
-  margin-right: 667.5px;
+  margin-left: 168px;
+  margin-right: 192.5px;
   width: 172px;
   height: 120px;
   transform: rotate(20deg);
-  margin-top: 3.5px;
+  margin-top: -6px;
   margin-bottom: 40px;
 }
 
@@ -45,6 +45,7 @@ body {
   letter-spacing: .25em;
   font-size: 200%;
   min-width: 1425px;
+  display: flex;
 }
 
 a:hover {
@@ -93,4 +94,12 @@ a:hover {
     text-shadow: 4px 4px 3px rgba(255, 0, 0, .3);
     background-color: rgba(0, 0, 0, .1);
   }
+}
+
+.options {
+  margin-top: 175px;
+}
+
+.left_div, .center_div, .right_div {
+  width: 475px;
 }
