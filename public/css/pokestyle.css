@@ -118,9 +118,9 @@ h3 {
   margin-left: 100px;
 }
 
-.button, .edit_page {
+.button, .edit_page, .new_page {
   margin-left: 150px;
-  transform: rotate(-15deg);
+  transform: rotate(-17deg);
   font-size: 30px;
   background: none;
   border: none;
@@ -142,8 +142,14 @@ h3 {
   width: 300px;
 }
 
+.new_page {
+  margin-top: 80px;
+  margin-left: 195px;
+  width: 300px;
+}
+
 .untilt {
-  transform: rotate(15deg);
+  transform: rotate(17deg);
   margin-top: 125px;
   margin-left: 0px;
 }
