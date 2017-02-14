@@ -12,19 +12,46 @@ a, p, h2, h3 {
   text-align: center;
 }
 
+p {
+  margin-top: -20px;
+}
+
+a {
+  padding: 5px;
+}
+
+.poke_list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+img {
+  margin-left: 643px;
+  margin-right: 667.5px;
+  width: 172px;
+  height: 120px;
+  transform: rotate(20deg);
+  margin-top: 3.5px;
+  margin-bottom: 40px;
+}
+
 body {
   background-image: url(../images/pokedex.png);
-  background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: "Pokemon", monospace;
   letter-spacing: .25em;
   font-size: 200%;
+  min-width: 1425px;
 }
 
 a:hover {
-  padding: 20px;
+  padding: 5px;
   animation: pulse 1s infinite;
 }
+
 .containareon, h1 {
   box-sizing: border-box;
   padding: 10px;

@@ -13,6 +13,20 @@ require_relative 'db/connection.rb'
 require_relative 'models/pokemon.rb'
 
 get "/" do
-  @pokemons = Pokemon.all
+  @pokemon = Pokemon.all
   erb :index
+end
+
+get "/pokemon/new" do
+  erb :"new"
+end
+
+post "/pokemon" do
+  @pokemon = Pokemon.create(params[:pokemon])
+  redirect "/pokemon/#{@pokemon.id}"
+end
+
+get "/pokemon/:id" do
+  @pokemon = Pokemon.find(params[:id])
+  erb :pokemon
 end
