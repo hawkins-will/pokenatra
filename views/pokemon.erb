@@ -1,24 +1,19 @@
 <div class="left_div">
-  <form action="/" method="get">
-    <input class="button" type="submit" value="&larr; Back">
-  </form>
+  <div class="left_buttons">
+    <h3><a href="/">HOME</a></h3>
+    <h3 class="left_two"><a href="/pokemon/<%= @pokemon.id %>/edit">EDIT</a></h3>
+    <form class="left_three release_button" action="/pokemon/<%= @pokemon.id %>" method="post">
+      <input type="hidden" name="_method" value="delete">
+      <input class="button " type="submit" value="RELEASE">
+    </form>
+  </div>
 
-  <form action="/pokemon/<%= @pokemon.id %>/edit" method="get">
-    <input class="button" type="submit" value="Edit">
-  </form>
-
-  <form action="/pokemon/<%= @pokemon.id %>" method="post">
-    <input type="hidden" name="_method" value="delete">
-    <input class="button" type="submit" value="Release">
-  </form>
 </div>
 <div class="center_div">
   <h2><%=@pokemon.name %></h2>
     <p><%=@pokemon.poke_type %></p>
     <img src="<%= @pokemon.img_url %>">
     <p>CP: <%=@pokemon.cp %></p>
-
-  <p class="options"><a href="/">Go Back!</a></p>
 </div>
 
 <div class="right_div"></div>

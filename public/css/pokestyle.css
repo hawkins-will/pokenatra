@@ -3,7 +3,7 @@
   src: url(../fonts/PokemonSolid.ttf) format("truetype");
 }
 
-a, p, h2, h3 {
+a, p, h2, h3, .button {
   color: rgb(215, 215, 0);
   text-shadow: rgb(35, 75, 180) 3px 3px 1px;
   -webkit-text-stroke: 2px rgb(55, 95, 200);
@@ -96,10 +96,63 @@ a:hover {
   }
 }
 
-.options {
-  margin-top: 175px;
-}
-
 .left_div, .center_div, .right_div {
   width: 475px;
+}
+
+h3 {
+  transform: rotate(-15deg);
+  font-size: 30px;
+}
+
+.left_buttons {
+  margin-left: -100px;
+  margin-top: 150px;
+}
+
+.left_two {
+  margin-left: 50px;;
+}
+
+.left_three {
+  margin-left: 100px;
+}
+
+.button, .edit_page {
+  margin-left: 150px;
+  transform: rotate(-15deg);
+  font-size: 30px;
+  background: none;
+  border: none;
+  font-family: "Pokemon";
+  font-weight: 800;
+  border: none;
+  background: none;
+  letter-spacing: 10px;
+}
+
+.button:hover {
+  padding: 5px;
+  animation: pulse 1s infinite;
+}
+
+.edit_page {
+  margin-top: 100px;
+  padding-left: 25px;
+  width: 300px;
+}
+
+.untilt {
+  transform: rotate(15deg);
+  margin-top: 125px;
+  margin-left: 0px;
+}
+
+.cancel {
+  margin-top: 0px;
+  margin-left: -175px;
+}
+
+.edit_text {
+  font-weight: normal;
 }
